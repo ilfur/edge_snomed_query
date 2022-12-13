@@ -1,7 +1,6 @@
 # edge\_pseudonym\_file\_upload
 
-This projects implements the server side of the upload of pseudonymized patient
-data files.
+This projects implements a REST service to query a snomed OWL ontology in an Oracle Database.
 
 You may find links to documentations of libraries and technologies
 used in this and other **Lupus** POC components inside the
