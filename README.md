@@ -1,4 +1,4 @@
-# edge\_pseudonym\_file\_upload
+# edge\_snomed\_query
 
 This projects implements a REST service to query a snomed OWL ontology in an Oracle Database.
 
