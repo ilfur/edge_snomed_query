@@ -1,0 +1,12 @@
+
+# DataSource class name for UploadMetaData datasource
+javax.sql.DataSource.SnomedUnit.driverClassName = oracle.jdbc.driver.OracleDriver
+javax.sql.DataSource.SnomedUnit.url = jdbc:oracle:thin:@//130.61.106.59:1521/PDB19c.publicdevnet.k8snet.oraclevcn.com
+javax.sql.DataSource.SnomedUnit.user = snomed
+javax.sql.DataSource.SnomedUnit.password = snomed
+
+
+javax.sql.DataSource.SnomedUnit._additionalElements = jakarta.persistence.schema-generation.database.action
+
+javax.sql.DataSource.SnomedUnit.jakarta.persistence.schema-generation.database.action = create
+

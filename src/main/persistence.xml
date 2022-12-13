@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+                                 https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+  <persistence-unit name="DocumedUnit" transaction-type="RESOURCE_LOCAL">
+    <description>The edge database.</description>
+
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+
+    <class>com.oracle.edge.pushData.PatientIdentifyingData</class>
+    <class>com.oracle.edge.pushData.Comorbidities</class>
+    <class>com.oracle.edge.pushData.Medication</class>
+    <class>com.oracle.edge.pushData.LabData</class>
+    <class>com.oracle.edge.pushData.QNRFatigue</class>
+    <class>com.oracle.edge.pushData.PatientModule</class>
+    <class>com.oracle.edge.pushData.QNRSmoking</class>
+    <class>com.oracle.edge.pushData.BasisData</class>
+    <class>com.oracle.edge.pushData.bloodPressure.BloodPressure</class>
+    <class>com.oracle.edge.pushData.SLEDAI</class>
+    <class>com.oracle.edge.pushData.PhysicianModule</class>
+    <class>com.oracle.edge.pushData.CoreDataSet</class>>
+
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <class>com.oracle.edge.pushData.UploadData</class>
+    
+    <class>com.oracle.edge.pushData.Comorbidity</class>
+
+    <class>com.oracle.edge.pushData.SLEDAI</class>
+    <class>com.oracle.edge.pushData.Survey</class>
+    <class>com.oracle.edge.pushData.PatientRelated</class>
+    <class>com.oracle.edge.pushData.CoreIdentity</class>
+    <class>com.oracle.edge.pushData.PatientModule</class>
+    <class>com.oracle.edge.pushData.CoreDataSet</class>
+    <class>com.oracle.edge.pushData.Treatment</class>
+    <class>com.oracle.edge.pushData.bloodPressure.Description</class>
+    <class>com.oracle.edge.pushData.bloodPressure.Data</class>
+
+    <properties>
+      <!-- EclipseLink Properties -->
+      <property name="eclipselink.weaving" value="false" />
+    </properties>
+  </persistence-unit>
+
+</persistence>
